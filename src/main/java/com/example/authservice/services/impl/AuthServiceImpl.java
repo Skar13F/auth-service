@@ -33,6 +33,7 @@ public class AuthServiceImpl implements AuthService {
         return UserModel.builder()
                 .email(userRequest.getEmail())
                 .password(userRequest.getPassword())
+                .role("USER")
                 .build();
     }
 }
